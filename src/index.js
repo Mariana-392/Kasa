@@ -4,10 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Location from './pages/Location';
-import About from './pages/About';
-import Error from './pages/Error';
+import Home from './pages/Home/Home';
+import Location from './pages/Location/Location';
+import About from './pages/About/About';
+import Error from './pages/Error/Error';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
