@@ -1,7 +1,7 @@
 import '../../styles/main.css'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
-import Aboutbanner from '../../components/Banner/Aboutbanner'
+import Aboutbanner from '../../components/Aboutbanner/Aboutbanner'
 import Collapse from '../../components/Collapse/Collapse'
 import Aboutdata from '../../datas/about.json'
 

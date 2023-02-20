@@ -1,13 +1,13 @@
 import aboutbanner from '../../assets/aboutbanner.png'
 
-import '../Banner/Banner.css'
+import './Aboutbanner.css'
 
-function Banner() {
+function Aboutbanner() {
     return (
-        <div className="banner">
+        <div className="about_banner">
             <img src={aboutbanner} alt="Bannière de la page À propos"/>
         </div>
     )
 }
 
-export default Banner
+export default Aboutbanner

@@ -1,0 +1,118 @@
+.lodginginfo_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lodging_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+    margin-bottom: 0;
+}
+
+.lodging_location{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.tag_container{
+    display: flex;
+    gap: 10px;
+}
+
+.lodging_tag{
+    background: #FF6060;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: inline-grid;
+    padding: 3px 40px;
+    row-gap: 10px;
+}
+
+.host {
+    margin-top: 10px;
+}
+
+.host_info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.host_name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+    width: 100px;
+}
+
+.host_img {
+    border-radius: 100%;
+    height: 64px;
+    text-align: end;
+}
+
+.stars_container {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .lodging_title{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    
+    .lodging_location {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    
+    .lodging_tag {
+        font-size: 10px;
+        width: 84px;
+        height: 18px;
+        border-radius: 5px;
+    }
+
+    .lodginginfo_container {
+        flex-direction: column;
+    }
+
+    .host {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .host_name {
+        font-size: 12px;
+        width: 60px;
+    }
+
+    .host_img {
+        height: 32px;
+    }
+
+    .stars_container {
+        height: 15px;
+    }
+}
