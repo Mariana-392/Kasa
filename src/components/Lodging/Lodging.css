@@ -34,11 +34,11 @@
     background: #FF6060;
     border-radius: 10px;
     width: 115px;
-    height: 25px;
+    height: 36px;
     color: white;
     text-align: center;
     align-items: center;
-    display: inline-grid;
+    display: grid;
     padding: 3px 40px;
     row-gap: 10px;
 }
@@ -89,8 +89,8 @@
     .lodging_tag {
         font-size: 10px;
         width: 84px;
-        height: 18px;
         border-radius: 5px;
+        padding: 2px 20px;
     }
 
     .lodginginfo_container {
@@ -105,7 +105,7 @@
 
     .host_name {
         font-size: 12px;
-        width: 60px;
+        width: 50px;
     }
 
     .host_img {

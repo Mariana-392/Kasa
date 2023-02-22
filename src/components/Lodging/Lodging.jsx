@@ -14,13 +14,13 @@ function Lodging({title, location, tags, host, rating}) {
                 <h1 className='lodging_title'>{title}</h1>
                 <h2 className='lodging_location'>{location}</h2>
                 <div className='tag_container'>
-                    {tags.map((tag) => (
-                        <p className='lodging_tag'>{tag}</p>
+                    {tags.map((tag, index) => (
+                        <p key={index} className='lodging_tag'>{tag}</p>
                         //récupère la liste des tags avec la méthode .map()
                     ))}
                 </div>
-
             </div>
+            
             <div className='host'>
                 <div className='host_info'>
                     <p className='host_name'>{host.name}</p>
