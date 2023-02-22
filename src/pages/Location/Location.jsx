@@ -1,7 +1,8 @@
+//import des components nécéssaires à la page + useParams et la page Error
 import '../../styles/main.css'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
-import Carroussel from '../../components/Carroussel/Carroussel'
+import Carrousel from '../../components/Carrousel/Carrousel'
 import Lodging from '../../components/Lodging/Lodging'
 import Collapse from '../../components/Collapse/Collapse'
 import Locationdata from '../../datas/locations.json'
@@ -16,6 +17,7 @@ function Location() {
         return <Error />
     }
 
+    //constantes pour récupérer les données nécéssaires
     const id = lodging.id;
     const pictures = lodging.pictures;
     const title = lodging.title;
@@ -31,7 +33,7 @@ function Location() {
             <div className='container'>
                 <Header />  
                 <main>
-                    <Carroussel 
+                    <Carrousel 
                     id={id}
                     pictures={pictures}
                     />
@@ -51,6 +53,7 @@ function Location() {
                         <Collapse 
                             title="Equipements"
                             text={equipments.map((equipment, index)=>(
+                                //liste des équipement avec la methode .map()
                                 <li key={index} className='equipment_list'>{equipment}</li>
                             ))}
                         />        

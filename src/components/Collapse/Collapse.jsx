@@ -3,10 +3,14 @@ import arrowopen from '../../assets/arrowopen.svg'
 import arrowclose from '../../assets/arrowclose.svg'
 import './Collapse.css'
 
+//composant pour les pages à propos et Location
+
 function Collapse({title, text}) {
     const [isOpen, setIsOpen] = useState(false)
-    const openHandler = () =>{ setIsOpen((isOpen)=>!isOpen)}
 
+    //constante pour l'événement onClick qui permet ouverture/fermeture
+    const openHandler = () =>{ setIsOpen((isOpen)=>!isOpen)}
+    
     return(
             <article className='about_gallery_container'>
                 <div className='about_container' onClick={openHandler}>
@@ -14,9 +18,12 @@ function Collapse({title, text}) {
                     {!isOpen ? 
                     <img className='about_img' src={arrowopen} alt="chevron" /> : 
                     <img className='about_img' src={arrowclose} alt="chevron" />
+                    //Si c'est ouvert alors on affiche la flèche open sinon la flèche close
                     }
                 </div>
-                {isOpen && <p className='about_text'>{text}</p>}
+                {isOpen && <p className='about_text'>{text}</p>
+                //si c'est ouvert alors on affiche le texte
+            }
             </article>
     )
 }

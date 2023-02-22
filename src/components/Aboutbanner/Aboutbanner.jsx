@@ -1,5 +1,4 @@
 import aboutbanner from '../../assets/aboutbanner.png'
-
 import './Aboutbanner.css'
 
 function Aboutbanner() {

@@ -5,9 +5,8 @@ import emptyStar from '../../assets/starempty.png'
 
 function Lodging({title, location, tags, host, rating}) {
 
+    //constante pour un tableau des notes, transforme la notation en nombre d'étoiles pleines
     const ratingStars = [1, 2, 3, 4, 5]
-console.log(ratingStars)
-    
 
     return(
         <article className='lodginginfo_container'>
@@ -17,6 +16,7 @@ console.log(ratingStars)
                 <div className='tag_container'>
                     {tags.map((tag) => (
                         <p className='lodging_tag'>{tag}</p>
+                        //récupère la liste des tags avec la méthode .map()
                     ))}
                 </div>
 
@@ -43,6 +43,9 @@ console.log(ratingStars)
                             alt="Etoile vide"
                             />
                         )
+                        //récupère les notations pour chaque logements avec la methode .map()
+                        //Si la notation est supérieur ou égale au tableau affiche étoile pleine correspondant
+                        //autrement cela affiche étoile vide
                     ))}
                 </div>
             </div>
